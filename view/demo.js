@@ -1,7 +1,13 @@
+
 layui.define(function(exports) {
 
     console.log("haha");
-    exports('demo', function () {
-        console.log("demo");
-    });
+
+    var demo = {
+        hello: function() {
+            console.log("demo");
+        }
+    };
+
+    exports('demo', demo);
 });
